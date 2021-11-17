@@ -8,4 +8,4 @@ How to run:
 
 API Details:
 1. Download Insomnia (https://insomnia.rest)
-2. Import the workspace from "api docs" which at the project root directory.
+2. Import the workspace from "api docs" which is at the project root directory.
