@@ -1,9 +1,10 @@
 const express = require('express');
-
+var cors = require('cors')
 const $PORT = 8080;
 
 const app = express();
 // middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded());
 /**
