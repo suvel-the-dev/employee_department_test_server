@@ -1,7 +1,6 @@
 function getDepartmentName(dptId) {
-    const departmentsJson = require('../../../common/data/departments.json');
-    const departmentsDictionary = JSON.parse(departmentsJson)
-    return departmentsDictionary[dptId].name;
+    const departmentsObj = require('../../constants/departments.json');
+    return departmentsObj[dptId].name;
 }
 
 module.exports = getDepartmentName;
