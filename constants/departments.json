@@ -1,1 +1,7 @@
-{"111":{"name":"HR Department"},"222":{"name":"IT Department"},"333":{"name":"Finance Department"},"444":{"name":"Marketing Department"},"555":{"name":"Sales Department"}}
+{
+  "111": { "name": "HR Department" },
+  "222": { "name": "IT Department" },
+  "333": { "name": "Finance Department" },
+  "444": { "name": "Marketing Department" },
+  "555": { "name": "Sales Department" }
+}

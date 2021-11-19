@@ -27,24 +27,24 @@
 //     }
 // }
 
-const Department = require('./Department');
-const generateEmpId = require('./common/functions/generateEmpId');
+const Department = require("./Department");
+const generateEmpId = require("./common/functions/generateEmpId");
 
 class Employee extends Department {
-    constructor({ name, dob, deptId }) {
-        super(deptId);
-        this.name = name;
-        this.dob = dob;
-        this.empId = generateEmpId();
+  constructor({ name, dob, deptId }) {
+    super(deptId);
+    this.name = name;
+    this.dob = dob;
+    this.empId = generateEmpId();
 
-        return {
-            name: this.name,
-            dob: this.dob,
-            empId: this.empId,
-            deptId: this.deptId,
-            deptName: this.deptName
-        };
-    }
+    return {
+      name: this.name,
+      dob: this.dob,
+      empId: this.empId,
+      deptId: this.deptId,
+      deptName: this.deptName,
+    };
+  }
 }
 
 // class Employees {
@@ -86,6 +86,5 @@ class Employee extends Department {
 // employees.save();
 
 // console.log(employees.getAll());
-
 
 module.exports = Employee;
