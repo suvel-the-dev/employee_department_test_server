@@ -60,6 +60,8 @@ app.post("/employee", (req, res) => {
     res.send({
       statusCode: 200,
       statusMessage: "Success",
+      data: newEmployee,
+      err: null,
     });
   }
 });
