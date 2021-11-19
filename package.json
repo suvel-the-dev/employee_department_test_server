@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./index.js"
+    "start": "nodemon ./index.js",
+    "format": "prettier --write .",
+    "chk-formate": "prettier --check ."
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "prettier": "2.4.1"
   }
 }
