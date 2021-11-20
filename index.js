@@ -38,6 +38,26 @@ app.get("/employee", (req, res) => {
   });
 });
 
+app.get("/employee/department/:id", (req, res) => {
+
+  const param = req.params;
+  const departmentId = param.id;
+
+  const Employees = require("./Employees");
+  const employeesList = new Employees().getAll();
+
+  const departmentEmployees = employeesList.filter((employee) => {
+    return employee.deptId === departmentId;
+  })
+
+  res.send({
+    statusCode: 200,
+    statusMessage: "Success",
+    data: departmentEmployees,
+    err: null,
+  });
+});
+
 app.post("/employee", (req, res) => {
   const bodyParam = req.body;
   const { name, dob, deptId } = bodyParam;
